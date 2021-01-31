@@ -26,13 +26,8 @@ def lay_duong_link(content):
 def kiem_tra_link(link):
     check = re.search("^https", str(link))
     return check
-    #for i in link.find_all('href'): #vong for la em kiem tra tung ki tu roi
-        #check = i.find('https') #code nay ko dung Thang nhe
-        #check =
-        #if check is not None:
-            #result.append(check)
-    #return  #tai sao lai return ma ko co gia tri tra ve?
-
+    
+#hàm chỉnh sửa link cho hợp lệ
 def chinh_sua_link(url_root, item):
     result  = str(url_root) + str(item)
     return result
